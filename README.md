@@ -1,59 +1,80 @@
-Introduction
+## Introduction
 
-Welcome to the EPL343.Winter23.Team1 project. This guide provides detailed instructions for setting up and running the application.
+Welcome to the GreenLightStudioWebsite-SoftwareEngineeringProject.  
+This guide provides detailed instructions for setting up and running the application locally.
 
+---
 
-Prerequisites
+## Prerequisites
+
 Before you begin, ensure you have the following installed:
 
-Node.js (version v20.10.0)
+- Node.js (version v20.10.0)
 
+You can download Node.js from the official website: https://nodejs.org/
 
-Installation Steps
+---
 
-Step 1: Install Node.js
+## Installation Steps
 
-Ensure you have Node.js version v20.10.0 installed on your system. You can download it from the official Node.js website.
+### Step 1: Install Node.js
 
-Step 2: Clone the Repository
+Ensure Node.js version v20.10.0 is installed on your system.
 
-Clone the EPL343.Winter23.Team1 repository to your local machine.
+You can verify your installed version by running:
+node -v
 
-Step 3: Install Dependencies
+---
 
-Navigate to the root directory of the cloned repository and execute the following commands in your command prompt:
+### Step 2: Clone the Repository
 
+Clone the GreenLightStudioWebsite-SoftwareEngineeringProject repository to your local machine:
+git clone https://github.com/yourusername/GreenLightStudioWebsite-SoftwareEngineeringProject.git
+
+---
+
+### Step 3: Install Dependencies
+
+Navigate to the root directory of the project and install the required dependencies:
 npm install mssql
-
 npm install express
-
 npm install moment-timezone
 
-These commands will install all the necessary dependencies required for the project.
+Alternatively, if `package.json` is properly configured, you can run:
+npm install
 
+---
 
-Running the Application
+## Running the Application
 
-User Site
+### User Site
 
-Navigate to the \epl343.winter23.team1-main\epl343.winter23.team1-main directory.
+Navigate to the project directory and run:
+node user/server.js
 
-Run the command node user/server.js.
+The user site should now be running locally.
 
-The user site should now be accessible.
+---
 
+### Admin Portal
 
-Admin Portal
+From the root directory, navigate to the admin folder:
+cd admin
 
-From the root directory, navigate to the admin folder using the command cd admin.
+Then run:
+node server.js
 
-Run the command node server.js.
+Access the admin portal using the password:
+1234
 
-Access the admin portal using the password 1234.
+---
 
+## Troubleshooting
 
-Troubleshooting
+If you encounter any issues:
 
-If you encounter any issues during the setup or execution, ensure that you have correctly followed all the installation steps and that you are using the correct version of Node.js. If problems persist, verify that all dependencies are correctly installed.
+- Ensure you are using Node.js v20.10.0
+- Verify all dependencies are installed correctly
+- Confirm that the database configuration is properly set
 
-For further assistance, please contact the project maintainers or refer to the project documentation.
+If problems persist, review the project documentation or contact the project contributors.
