@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <div id="modifyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Modify Reservation</h2>
+            <form id="modifyForm">
+                <input type="hidden" id="reservationIdToModify">
+                <label for="newDate">New Date:</label>
+                <input type="date" id="newDate" name="newDate"><br><br>
+                <label for="newStartTime">New Start Time:</label>
+                <select id="newStartTime" name="newStartTime"></select><br><br>
+                <label for="newEndTime">New End Time:</label>
+                <select id="newEndTime" name="newEndTime"></select><br><br>
+                <label for="newRoomID">New Room:</label>
+                <select id="newRoomID" name="newRoomID">
+                    <option value="1">Room 1</option>
+                    <option value="2">Room 2</option>
+                    <option value="3">Room 3</option>
+                    <option value="4">Room 4</option>
+                </select><br><br>
+                <label for="newStaff">New Staff:</label>
+                <input type="text" id="newStaff" name="newStaff"><br>
+                <label for="newEquipment">New Equipment:</label>
+                <input type="text" id="newEquipment" name="newEquipment"><br>
+                <button type="button" onclick="submitModification()">Modify</button>
+            </form>
+        </div>
+    </div>
+ 
+    <script type="text/javascript" src="/client.js"></script>
+</head>
+ 
+<body>
+    <nav>
+        <img src="https://i.imgur.com/H4acstv.png" alt="Logo" class="nav-logo">
+        <a href="calendar" class="non-selected">Calendar</a>
+        <a href="manage" class="selected">Reservation list</a>
+    </nav>
+    <div class="container">
+        <table id="reservationsTable">
+            <thead>
+                <tr>
+                    <th>Reservation ID</th>
+                    <th>Full Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Company Name</th>
+                    <th>Room</th>
+                    <th>Date</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Staff</th>
+                    <th>Equipment</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body> 
+ 
+</html>

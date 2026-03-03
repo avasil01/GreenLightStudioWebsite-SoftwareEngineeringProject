@@ -1,0 +1,917 @@
+/* General styling of the text */
+body {
+  font-family: 'Avenir Next LT Pro Light', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f0f0f0;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.selected {
+  font-weight: bold;
+  padding: 0 15px 0px 0px;
+}
+/* styling of the backround of the "rooms" page */
+.room {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+/* text for rooms */
+.room summary {
+  background-color: #fff;
+  color: #333;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+/* the following styling is for the drop down (rooms) */
+.room summary::-webkit-details-marker {
+  display: none;
+}
+
+.room summary::after {
+  content: 'Ë…';
+  float: right;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.room[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.room details[open] summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* room images styling */
+.room img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.room p {
+  padding: 15px 20px;
+  margin: 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.background-container {
+  font-family: "Avenir Next LT Pro Light", sans-serif;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.259) 100%), 
+              url("https://i.imgur.com/vbVWDAD.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+}
+/* Apply a background color and font to the user body */
+body.user-body {
+  font-family: "Avenir Next LT Pro Light", sans-serif;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.259) 100%), url("https://i.imgur.com/vbVWDAD.jpeg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+}
+
+body.user-bodybook {
+  font-family: "Avenir Next LT Pro Light", sans-serif;
+  background-color: #a4b494;
+}
+body.user-bodyR {
+  font-family: "Avenir Next LT Pro Light", sans-serif;
+  background: url("https://i.imgur.com/ycNIYJo.jpeg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #333;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: right;
+  color: #333;
+  margin: 0 auto;
+  width: 100%;
+}
+/* the position of the logo */
+.nav-logo {
+  position: absolute; 
+  top: 0; 
+  left: 5px; 
+  width: 50px; 
+  height: 50px; 
+}
+/* styling for when you select the tabs and non select */
+.selected {
+  color: #3f8c31;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.selected:hover {
+  color: #3f8c31;
+}
+
+.non-selected {
+  color: whitesmoke; 
+  font-weight: bold;
+  font-size: 20px;
+}
+.non-selected:hover {
+  color: #3f8c31;
+}
+
+i {
+  color: #333;
+  margin-left: 530px;
+  position: absolute;
+  top: 120px;
+  left: 405px;
+  font-size: 25px;
+}
+
+/* Style the sections */
+section {
+  padding: 40px;
+  margin: auto;
+  height: fit-content;
+  width: 650px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  box-sizing: inherit;
+  /* box-shadow: 0 0 10px rgba(156, 66, 66, 0.1); */
+  border-radius: 10px;
+}
+
+/* for room page */
+#room {
+  padding: 40px;
+  margin: 30px auto 0;
+  height: fit-content;
+  width: 650px;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-sizing: inherit;
+  box-shadow: 0 0 10px rgba(156, 66, 66, 0.1);
+  border-radius: 10px;
+}
+#room h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+#room p {
+  text-align: left;
+  color: white;
+  font-size: 18px;
+}
+
+/* Style the headings */
+h1 {
+  color: #ffffff; 
+  font-weight: bold;
+  font-size: 35px;
+  display: flex;
+}
+
+h3 {
+  color: #fff; 
+  font-weight: bold;
+  font-size: larger;
+}
+/* Style the headings */
+h2 {
+  color: #333; 
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+/* Style the buttons */
+button {
+  background-color: #2ecc71; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a4b494; /* Darker green on hover */
+}
+
+/* Add some spacing to paragraphs */
+p {
+  margin-bottom: 10px;
+  font-family: "Avenir Next LT Pro Light", sans-serif;
+  justify-content: center; align-items: center; text-align: center;
+}
+/* the legend at top left that includes the room's colors */
+#color-legend {
+  background-color: #eae6c7; 
+  border-radius: 8px; 
+  padding: 10px;
+  margin-bottom: 10px; 
+  width: 100%; 
+  display: inline-flex; 
+  flex-direction: column; 
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* colored circled for rooms */
+.color-circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 5px; /* Add a bottom margin for spacing between items */
+}
+
+.calendar-with-legend {
+  display: flex;
+  align-items: flex-start; /* Align the legend and the calendar at their top */
+}
+
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* styling of the table calendar */
+#calendar th,
+#calendar td {
+  padding: 10px;
+  width: 14.28%;
+}
+
+#calendar td {
+  height: 100px; 
+}
+
+/* Request a Reservation Form */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding-top: 60px; 
+}
+/* the contant of the request reservation form */
+.modal-content {
+  background-color: #e1dfcf; 
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #888; 
+  width: 90%; 
+  max-width: 600px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  overflow-y: auto; 
+}
+
+
+/* Adjusting the styles for the form elements */
+#reservation-form label {
+  width: 60%;
+  margin: 10px auto;
+  display: block;
+  padding: 0.1rem;
+}
+/* styling of email, submit input */
+#reservation-form input[type="text"],
+#reservation-form input[type="email"],
+#reservation-form input[type="date"],
+#reservation-form select {
+  width: 60%; 
+  margin: 10px auto; 
+  display: block; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+
+#reservation-form input[type="submit"] {
+  width: 40%; 
+  background-color: #678b81; 
+  color: white; 
+  padding: 12px 20px; 
+  margin: 20px auto; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  display: block; 
+}
+/* hover */
+#reservation-form input[type="submit"]:hover {
+  background-color: #e1dfcf;
+  color: #333;
+}
+
+/* Additional styles for the success message if needed */
+#success-message {
+  display: none; 
+  background-color: #dff0d8; 
+  color: #3c763d; 
+  padding: 10px; 
+  margin-top: 20px; 
+  border-radius: 5px; 
+}
+/* style the calendar */
+#calendar-container {
+  font-family: "Avenir Next LT Pro Light", sans-serif;
+  color: #678b81; 
+  background-color: #eae6c7; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%; 
+  max-width: 1200px; 
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+#calendar-header {
+  background-color: #a4b494; 
+  color: #ffffff; 
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#calendar-header h2 {
+  margin: 0;
+  font-size: 2em; /* Larger font size for the month and year */
+}
+
+#prev-month,
+#next-month {
+  background-color: #678b81; /* Muted teal */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em; /* Larger font size for buttons */
+}
+
+#prev-month:hover,
+#next-month:hover {
+  background-color: #56736f; /* A darker shade of muted teal for hover state */
+}
+
+table#calendar {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.2em; /* Larger font size for the calendar days */
+}
+
+table#calendar th {
+  background-color: #678b81; /* Muted teal for headers */
+  color: #ffffff;
+  padding: 15px;
+  border-bottom: 2px solid #ba955e; /* Warm beige for separation */
+}
+
+table#calendar td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #bab590;
+}
+
+table#calendar td:hover {
+  background-color: #ba955e; /* Warm beige for hover effect on days */
+}
+/* Styling of the "+create new reservation" button */
+.create-reservation {
+  background-color: #678b81; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  right: 0; 
+  z-index: 10; 
+  margin-top: 20px;
+  margin-top: 20px;
+}
+/* hover styling for create-reservation button */
+.create-reservation:hover {
+  background-color: #a4b494;
+}
+
+/* close button in popup styling*/
+.close {
+  color: white;
+  float: right; 
+  font-size: 28px; 
+  font-weight: bold; 
+  background-color: red; 
+  border-radius: 50%; 
+  width: 30px; 
+  height: 30px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin-right: 10px;
+  cursor: pointer; 
+  position: absolute; 
+  top: 10px; 
+  right: 10px;
+  font-size: 25px; 
+}
+/* close button in popup styling for hover*/
+.close:hover,
+.close:focus {
+  background-color: darkred; 
+  text-decoration: none; 
+}
+
+/* .dropdown-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.dropdown-btn:hover {
+  background-color: #3e8e41;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-left: 6px solid #4CAF50;
+}
+
+.dropdown-content img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+} */
+
+/* Name and description of the room on the dropodown */
+.room summary {
+  background-color: #a4b494;
+  color: white;
+  size:large;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.room summary::-webkit-details-marker {
+  display: none;
+}
+/* after clicking on the dropdown styling changes */
+.room summary::after {
+  content: '⌄';
+  float: right;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+/* Name and description of the room on the dropodown after the dropdown is clicked*/
+.room[open] summary::after {
+  transform: rotate(180deg);
+}
+/* content of the dropdown after it is open (includes the image of each room) */
+.room details[open] summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* styling of the room image inside the dropdown */
+.room img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+
+/* includes the about us text and the logo */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+/* styling of the image logo */
+.about-logo {
+  max-width: 250px;
+  margin: 0 auto; 
+  display: block; 
+}
+/* styling of the about us initial text in a box */
+.about-text {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  border-color: #a4b494;
+  max-width: 60%; 
+  color:#333;
+  font-weight: bolder;
+  font-size: large;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* the styling of the container that includes more information about the studio */
+.learn-more-container {
+  padding: 20px;
+  border-radius: 10px;
+  color: #f5f5f5; 
+  margin: auto; 
+  max-width: 80%; 
+}
+
+/* styling of the box that includes the information about learn more about us */
+.info-box {
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* styling of the production list */
+.production-list {
+  list-style: none;
+  padding-left: 0;
+  border-top: 1px solid #ba955e; 
+  margin-top: 15px;
+}
+
+/* styling of the li (listing contents) of the production list */
+.production-list li {
+  background: rgba(255, 255, 255, 0.1); 
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.dropdown-summary {
+  cursor: pointer;
+  padding: 8px;
+  border: 2px solid #ffffff82;
+  border-radius: 10px;
+  list-style: none;
+}
+
+.dropdown-summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown-summary::after {
+  content: '⌄';
+  float: right;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.video-dropdown[open] .dropdown-summary::after {
+  transform: rotate(180deg);
+}
+
+.video-dropdown[open] .dropdown-summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.dropdown-content {
+  display: none;
+  border: 2px solid #ffffff82;
+  border-top: none;
+  padding: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: left;
+}
+
+.video-dropdown[open] .dropdown-content {
+  display: block;
+  
+}
+
+/* for services */
+.services-section {
+  padding: 60px 0; /* Padding for top and bottom */
+}
+
+.services-section .container {
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.service-item {
+  text-align: center; /* Center the content */
+  margin-bottom: 30px; /* Space between service items */
+}
+
+.service-icon {
+  font-size: 50px; /* Size of the icons */
+  margin-bottom: 20px; /* Space below the icon */
+  color: #f4623a; /* Icon color, you can choose your own */
+}
+
+.service-item h3 {
+  margin-bottom: 15px; /* Space below the heading */
+  font-size: 24px; /* Size of the service title */
+}
+
+.service-item p {
+  font-size: 16px; /* Size of the paragraph text */
+  color: white; /* Color of the paragraph text */
+}
+
+/* Bootstrap Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Add your own color variables or use Bootstrap ones */
+:root {
+  --primary-color: #007bff; /* Primary color */
+  --secondary-color: #6c757d; /* Secondary color */
+}
+
+
+
+
+.room p {
+  padding: 15px 20px;
+  margin: 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.toast-message {
+  visibility: hidden; /* Hidden by default */
+  min-width: 100px; /* Set a minimum width */
+  margin-left: -125px; /* Negative half of the width to center it */
+  background-color: #d4edda; /* Black background color */
+  display: flex; 
+  color: #155724; /* White text color */
+  font-weight: bold; 
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Positioned relative to the viewport */
+  z-index: 10000; /* Sit on top */
+  right: 30px; /* 30px from the right */
+  top: 30px; /* 30px from the top */
+  font-size: 17px; /* Text size */
+}
+
+.toast-error {
+  visibility: hidden; /* Hidden by default */
+  min-width: 100px; /* Set a minimum width */
+  margin-left: -125px; /* Negative half of the width to center it */
+  background-color: rgb(222, 124, 91); /* Black background color */
+  display: flex; 
+  color: rgb(136, 36, 3); /* White text color */
+  font-weight: bold; 
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Positioned relative to the viewport */
+  z-index: 10000; /* Sit on top */
+  right: 30px; /* 30px from the right */
+  top: 30px; /* 30px from the top */
+  font-size: 17px; /* Text size */
+}
+
+.toast-message.show {
+  visibility: visible; /* Show the toast */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.toast-error.show {
+  visibility: visible; /* Show the toast */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;} 
+  to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 30px; opacity: 1;} 
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+.reservation-box {
+  /*TSISTSIII*/
+  width: fit-content;
+  height: fit-content;
+  margin: 5px;
+  font-size: medium;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reservationsModal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.reservationsModalContent {
+  position: relative;
+  background-color: #e1dfcf;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #888;
+  width: 40%;
+  /* Could be more or less, depending on screen size */
+}
+
+.reservationsCloseButton {
+  color: white;
+  /* Set the close button color to white */
+  float: right;
+  /* Float to the right side */
+  font-size: 28px;
+  /* Set the font size for the close icon */
+  font-weight: bold;
+  /* Make the close icon bold */
+  background-color: red;
+  /* Background color of the circle */
+  border-radius: 50%;
+  /* Make the background a circle */
+  width: 30px;
+  /* Width of the circle */
+  height: 30px;
+  /* Height of the circle */
+  display: flex;
+  /* Use flexbox to center the content */
+  align-items: center;
+  /* Align the text vertically */
+  justify-content: center;
+  /* Align the text horizontally */
+  margin-right: 10px;
+  /* Right margin for spacing from the edge */
+  cursor: pointer;
+  /* Pointer cursor to indicate interactivity */
+
+  position: absolute;
+  /* Position the close button absolutely within the modal-content */
+  top: 10px;
+  /* Adjust these values as needed for your design */
+  right: 10px;
+  font-size: 25px;
+  /* Adjust font size as needed */
+}
+
+.reservationsCloseButton:hover,
+.reservationsCloseButton:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style the buttons */
+.more-button {
+  background-color: #678b81;
+  color: #fff;
+  /* White button text */
+  padding: 5px 5px;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  font-size: small;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+ 
+.more-button:hover {
+  background-color: #ba955e;
+}
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+  width: 25%;
+}
+.contact-column {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+.icon {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 10px;
+}
